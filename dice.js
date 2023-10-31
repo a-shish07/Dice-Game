@@ -3,6 +3,7 @@ player1 =Math.floor((Math.random()*6)+1);
 var player2;
 player2 =Math.floor((Math.random()*6)+1);
 
+// For player 1
 if (player1===1) {
     document.querySelector(".dice1 .img1").setAttribute("src","images/dice1.png");
 } else if (player1===2) {
@@ -19,6 +20,7 @@ else if (player1===6) {
     document.querySelector(".dice1 .img1").setAttribute("src","images/dice6.png");
 }
 
+// For player 2
 if (player2===1) {
     document.querySelector(".dice2 .img2").setAttribute("src","images/dice1.png");
 } else if (player2===2) {
@@ -34,7 +36,7 @@ else if (player2===5) {
 else if (player2===6) {
     document.querySelector(".dice2 .img2").setAttribute("src","images/dice6.png");
 }
-
+// For comparing the dice of both players and showing the result of the dice rolled
 if (player1<player2) {
     document.querySelector("h1").textContent="player2 wins"
 } else if (player1>player2) {
